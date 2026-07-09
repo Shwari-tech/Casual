@@ -259,9 +259,9 @@
 
     <div class="app-container" id="app-wrapper">
         <iframe 
-            src="https://script.google.com/macros/s/AKfycbzxrYS5tUK1Oj6n7tLpFjoW659ihdXdqjmNQ7JstM__PSQVjVEzU9rim0butPDZyEevDg/exec"
-            allowfullscreen>
+            src="https://script.google.com/macros/s/AKfycbxlOsiwTbYqlhuJ5vRGzAl1TgEh0PEWoCw7YTWxNQNFZU4H_mOy3f0CHlP9qN04fd2F/exec"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
         </iframe>
     </div>
 
@@ -361,8 +361,8 @@
         function timerIncrement() {
             if (document.body.classList.contains('loaded')) {
                 idleTime = idleTime + 1;
-                // LOCK AFTER 5 MINUTES (300 SECONDS)
-                if (idleTime >= 300 && !isLocked) { 
+                // LOCK AFTER 60 SECONDS
+                if (idleTime >= 60 && !isLocked) { 
                     lockSystem();
                 }
             }
